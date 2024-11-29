@@ -1,0 +1,82 @@
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inconsolata", monospace;
+
+  font-style: normal;
+}
+
+p,
+a,
+li {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+body {
+  background-color: #8a8aff;
+}
+
+#contacto {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+button {
+  color: white;
+}
+
+#card-container {
+  display: flex;
+}
+
+.card {
+  width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+  max-width: 500px; /* Define un ancho máximo */
+  margin: 10px auto; /* Centra las tarjetas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra */
+  border: 1px solid #ddd; /* Bordes opcionales */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+.card-body ul {
+  padding-left: 20px; /* Espaciado interno */
+}
+
+.card-body ul li {
+  margin-bottom: 10px; /* Espaciado entre elementos */
+  display: block; /* Forzar diseño en bloque */
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%; /* Ajusta el tamaño para pantallas pequeñas */
+    margin: 5px auto;
+  }
+
+  .card-body ul {
+    padding-left: 10px;
+  }
+}
+
+.card,
+.card-body {
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+header {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
