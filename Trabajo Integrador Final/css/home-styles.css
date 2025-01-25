@@ -1,0 +1,230 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Estilos del Navbar */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+.navbar .btn-outline-primary {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.navbar .btn-outline-primary:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+h1 {
+  display: none;
+}
+
+/* Controles del usuario (Login, Carrito) */
+.user-controls {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Estilos del contenido principal */
+main {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro {
+  margin-bottom: 5px;
+}
+
+/* Estilos de la sección del mapa */
+.map-section {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#map {
+  width: 100%;
+  height: 80%;
+  background-color: #ddd;
+}
+
+/* Footer styles */
+.footer-section {
+  background-color: #ebebeb; /* Fondo claro */
+  color: #fff; /* Color de texto blanco */
+  padding: 20px 0;
+}
+
+.footer-logo {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.footer-section p {
+  margin: 5px 0;
+  color: black;
+}
+
+.footer-section a {
+  color: #007bff; /* Color dorado para enlaces */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.bi-facebook {
+  font-size: 1.5rem;
+  color: #007bff; /* Color dorado */
+}
+
+.bi-twitter {
+  font-size: 1.5rem;
+  color: #007bff; /* Color dorado */
+}
+
+/* Estilos para las secciones de hamburguesas */
+.our-burgers {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Contenedor de cada sección de hamburguesas */
+.burger-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ocupa la altura completa de la ventana */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efectos para las secciones activas */
+.burger-section.active .burger-text.derecha {
+  opacity: 1;
+  transform: translateX(10vw); /* Se mueve del centro hacia la derecha */
+}
+
+.burger-section.active .burger-text.izquierda {
+  opacity: 1;
+  transform: translateX(-10vw); /* Se mueve del centro hacia la izquierda */
+}
+
+.burger-text {
+  position: absolute;
+  left: 10vw;
+  right: 10vw;
+  opacity: 0; /* Comienza con opacidad 0 */
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 1em;
+  margin: 2%;
+  max-width: 80%;
+  padding: 1% 3%; 
+  text-align: center;
+  word-wrap: break-word;  
+}
+
+.burger-text h2 {
+  font-size: 2rem;
+}
+
+.burger-text p {
+  font-size: 1rem;
+}
+
+/* Estilos del texto principal */
+.principal-text h2 {
+  color: white;
+  text-align: center;
+  padding: 1vw;
+  border-radius: 0.5em;
+  margin: 2%;
+  font-size: 6vw;
+  text-shadow:  0.2em 0.2em 0.5em rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+  word-wrap: break-word;  
+}
+
+.principal-text p {
+  color: white;
+  text-align: center;
+  border-radius: 0.5em;
+  margin: 2%;
+  font-size: 3vw;
+  text-shadow:  0.2em 0.2em 0.5em rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+  max-width: 90%;
+  word-wrap: break-word;  
+}
+
+/* Estilos de las imágenes de las hamburguesas */
+.burger-image {
+  position: absolute;
+  width: 60%;
+  height: 80%;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.burger-image img {
+  width: 60%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.8s ease-out;
+  border: 5px solid white;
+}
+
+.burger-section.active .burger-image img {
+  transform: scale(1.05); /* Zoom suave en la imagen al hacer scroll */
+  opacity: 1;
+}
+
+/* Estilos de fondo de las secciones */
+.principal {
+  background: url(../imgs/principal.png) no-repeat fixed;
+  background-size: cover;
+  margin-bottom: 5px;
+}
+
+.intro {
+  background: url(../imgs/restaurant_2.jpg) no-repeat fixed;
+  background-size: cover;
+}
+
+.nudo {
+  background: url(../imgs/restaurant.jpg) no-repeat fixed;
+  background-size: cover;
+}

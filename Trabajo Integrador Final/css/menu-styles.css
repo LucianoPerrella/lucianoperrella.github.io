@@ -1,0 +1,198 @@
+#filtro-busqueda {
+  margin: 20px;
+  margin-bottom: 0;
+}
+#barra-busqueda {
+  max-width: 120px;
+}
+
+.hidden {
+  display: none;
+}
+#btn-filtros {
+  max-width: 120px;
+}
+
+.owl-prev,
+.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 15px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.owl-prev {
+  left: -40px;
+}
+
+/* Controles del usuario (Login, Carrito) */
+.user-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.owl-next {
+  right: -40px;
+}
+
+#separador-hamburguesas {
+  background-color: #6b8bc8;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+#separador-hamburguesas h2 {
+  margin: 0;
+  padding: 0;
+}
+
+#hamburguesas-carrusel {
+  margin: 20px;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+#hamburguesas-carrusel .card {
+  justify-content: center;
+  align-items: center;
+}
+
+#hamburguesas-carrusel img {
+  max-width: 550px;
+  justify-content: center;
+  align-items: center;
+}
+
+.boton-agregar,
+.boton-ver-mas {
+  margin-bottom: 10px;
+}
+
+.boton-ver-mas {
+  margin-left: 3px;
+  margin-top: 15px;
+}
+
+#hamburguesas h2,
+#veggie h2,
+#bebidas h2 {
+  color: white;
+  font-weight: bold;
+}
+
+#veggie,
+#bebidas {
+  margin-top: 60px;
+}
+
+.card {
+  margin-left: 2px;
+  margin-top: 0;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000 !important;
+}
+
+.extra-card .remove-from-cart {
+  font-size: 0.8rem;
+  padding: 2px 6px;
+  line-height: 1;
+}
+
+/* Estilos para los botones de cantidad (- y +) */
+.add-one .remove.one {
+  justify-content: center;
+  gap: 5px;
+  border-radius: 30%;
+}
+
+main .btn {
+  background-color: #004fc5; /* Ajuste de hover para un tono más claro */
+}
+
+.card-body img {
+  max-height: 350px;
+}
+.card-body p {
+  color: #555555;
+  font-weight: bold;
+}
+.card-body span {
+  font-weight: bold;
+}
+
+.extra-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 50px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-column {
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.card-body:hover {
+  transform: scale(1.05);
+}
+#id-busqueda {
+  max-width: 110px;
+}
+.card-body img {
+  max-width: 75px;
+  max-height: 350px;
+}
+
+#btn-busqueda {
+  border-color: #007bff;
+  color: white;
+  margin-left: 2px;
+  padding: 7px;
+}
+
+#btn-busqueda:hover {
+  background-color: 004fc5;
+  color: #fff;
+}
+.extra-card img {
+  padding-top: 5px;
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#burguer-btn {
+  margin-left: 90px;
+}
+
+@media (width > 700px) {
+  #burguer-btn {
+    margin-left: 350px;
+  }
+}
+
+@media (width > 1050px) {
+  .navbar-brand {
+    margin-right: 186px;
+  }
+}

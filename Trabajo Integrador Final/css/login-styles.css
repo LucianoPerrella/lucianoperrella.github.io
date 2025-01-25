@@ -1,0 +1,67 @@
+.login-container {
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.login-container .form-control {
+  border-radius: 5px;
+}
+.login-container .btn-primary {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.login-container img {
+  max-width: 250px;
+}
+#btn-ingresar {
+  margin-top: 10px;
+}
+
+/* Login container styles */
+.login-container {
+  align-items: center;
+  justify-content: center;
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.login-container .form-control {
+  border-radius: 5px;
+}
+
+.login-container .btn-primary {
+  width: 100%;
+  border-radius: 5px;
+}
+
+#btn-ingresar {
+  margin-top: 10px;
+}
+
+
+/* Asegurar que el main ocupe al menos toda la altura restante */
+body, html {
+  height: 100%; /* Asegura que el html y body ocupen toda la ventana */
+}
+
+main {
+  min-height: calc(100vh - 150px); /* Altura mínima, restando el espacio del header y footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+}
+
+footer {
+  margin-top: auto; /* Empuja el footer al final si el contenido no llena la pantalla */
+}
