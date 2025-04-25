@@ -1,38 +1,33 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kernel Burguer</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Iniciar Sesión</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap"
       rel="stylesheet"
     />
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-      rel="stylesheet"
-    />
-
-    <!-- bxSlider CSS -->
-    <link
-      href="../vendors/jquery.bxslider/jquery.bxslider.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="../css/login-styles.css" />
     <link rel="stylesheet" href="../css/home-styles.css" />
-    <link rel="icon" type="image/png" href="../imgs/favicon_64x64.png" />
+    <link rel="icon" type="image/png" href="../imgs/favicon_64x64.png">
   </head>
   <body>
     <!-- Header -->
     <header>
       <h1>Kernel Burguer</h1>
-      <div class="container-sm">
+      <div class="container">
         <nav
           class="navbar navbar-expand-lg navbar-light bg-white border-bottom"
         >
@@ -114,77 +109,48 @@
         </nav>
       </div>
     </header>
-
-    <!-- Main Content -->
     <main>
-      <!-- Intro Section -->
-      <div class="container-sm">
-        <section class="our-burgers">
-          <div class="principal burger-section">
-            <div class="principal-text text-center">
-              <h2>Sabores que hacen un debug a tu hambre</h2>
-              <p>
-                Usamos carne recién cortada y hamburguesas smasheadas a mano.
-              </p>
-              <p>Sin vueltas, la hamburguesa #1 de Paternal City.</p>
-            </div>
-          </div>
-          <div
-            class="intro burger-section d-flex align-items-center justify-content-center"
-          >
-            <div class="burger-text izquierda">
-              <h2>Nuestras Hamburguesas</h2>
-              <p>
-                La hamburguesería favorita de los amantes de la tecnología.
-                Carne Angus de primera, cortada a diario y cocinada a la
-                parrilla, con todos los ingredientes que amas.
-              </p>
-              <p>
-                ¡Descubre nuestras hamburguesas únicas como la x8086 y la
-                Búsqueda Binaria!
-              </p>
-            </div>
-            <div class="burger-image ms-3">
-              <img
-                src="../imgs/burger_1.jpeg"
-                alt="Hamburguesa Clásica"
-                class="img-fluid"
+      <div class="container">
+        <div class="login-container">
+          <img src="../imgs/Bichito 1.png" alt="" />
+          <h2 class="text-center mb-4">Iniciar Sesión</h2>
+          <form>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Ingresa tu correo"
+                required
               />
             </div>
-          </div>
-          <div
-            class="nudo burger-section d-flex align-items-center justify-content-center"
-          >
-            <div class="burger-text derecha">
-              <h2>Nuestra Historia</h2>
-              <p>
-                Kernel Burguer nació como un lugar secreto en 2023, inspirado en
-                la fusión entre tecnología y buen sabor. Oculta tras un letrero
-                de neón con un ícono de computadora, la hamburguesería
-                rápidamente se convirtió en un fenómeno local.
-              </p>
-              <p>
-                Kernel Burguer fue la primera en iniciar la fiebre de
-                hamburguesas geek.
-              </p>
+            <div class="form-group">
+              <label for="password">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                placeholder="Ingresa tu contraseña"
+                required
+              />
             </div>
-            <div class="burger-image ms-3">
-              <img src="../imgs/Bichito 1.png" alt="Logo" class="img-fluid" />
-            </div>
+            <button id="btn-ingresar" type="submit" class="btn btn-primary">
+              Ingresar
+            </button>
+          </form>
+          <div class="text-center mt-3">
+            <a href="#">¿Olvidaste tu contraseña?</a>
+          <div class="text-center mt-3">
+            <a href="../html/registro.html">¿No tenes cuenta? Registrate</a>
           </div>
-        </section>
-
-        <!-- Google Maps Section -->
-        <section class="map-section mb-5">
-          <h3 class="text-center">Nuestra Ubicación</h3>
-          <div id="map" class="bg-light" style="height: 300px"></div>
-        </section>
+        </div>
       </div>
     </main>
 
     <!-- Footer -->
     <footer class="footer-section bg-light py-5">
-      <div class="container-sm">
+      <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <!-- Logo de la marca -->
           <div class="col-md-4 mb-3">
@@ -229,17 +195,15 @@
       </div>
     </footer>
 
-    <!-- bxSlider Plugin -->
-    <script src="../vendors/jquery.bxslider/jquery.bxslider.js"></script>
-
-    <!-- Google Maps Script -->
+    <!-- Importar Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
     ></script>
-    <script src="../scripts/home-scripts.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Archivo JavaScript para autenticación -->
+    <script src="auth.js"></script>
   </body>
 </html>
